@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Bank Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: #0074d9;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #dashboard {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Online Bank</h1>
+    <div id="loginForm">
+        <h2>Login</h2>
+        <form id="login">
+            <input type="text" placeholder="Username" id="loginUsername">
+            <input type="password" placeholder="Password" id="loginPassword">
+            <button type="button" onclick="login()">Login</button>
+        </form>
+    </div>
+
+    <div id="registrationForm">
+        <h2>Registration</h2>
+        <form id="registration">
+            <input type="text" placeholder="Full Name" id="fullName">
+            <input type="text" placeholder="Username" id="registrationUsername">
+            <input type="password" placeholder="Password" id="registrationPassword">
+            <input type="number" placeholder="Initial Deposit" id="initialDeposit">
+            <button type="button" onclick="register()">Register</button>
+        </form>
+    </div>
+
+    <div id="dashboard">
+        <h2>Welcome to Your Dashboard</h2>
+        <p>Select an option:</p>
+        <select id="dashboardOptions">
+            <option value="balance">Check Balance</option>
+            <option value="transfer">Transfer Money</option>
+            <option value="settings">Account Settings</option>
+        </select>
+        <button type="button" onclick="navigateDashboard()">Go</button>
+
+        <div id="accountActions" style="display: none;">
+            <h3>Account Actions</h3>
+            <select id="accountActionOptions">
+                <option value="deposit">Deposit Money</option>
+                <option value="withdraw">Withdraw Money</option>
+            </select>
+            <button type="button" onclick="performAccountAction()">Perform Action</button>
+        </div>
+
+        <div id="accountSettings" style="display: none;">
+            <h3>Account Settings</h3>
+            <button type="button" onclick="saveSettings()">Save Settings</button>
+        </div>
+    </div>
+
+    <script>
+        function login() {
+            const username = document.getElementById("loginUsername").value;
+            const password = document.getElementById("loginPassword").value;
+
+            if (username === "user" && password === "password") {
+                document.getElementById("loginForm").style.display = "none";
+                document.getElementById("registrationForm").style.display = "none";
+                document.getElementById("dashboard").style.display = "block";
+            } else {
+                alert("Invalid login credentials.");
+            }
+        }
+
+        function register() {
+            const fullName = document.getElementById("fullName").value;
+            const username = document.getElementById("registrationUsername").value;
+            const password = document.getElementById("registrationPassword").value;
+            const initialDeposit = parseFloat(document.getElementById("initialDeposit").value);
+
+            if (fullName && username && password && !isNaN(initialDeposit) && initialDeposit > 0) {
+                alert("Registration successful.");
+            } else {
+                alert("Please fill in all required fields with valid data.");
+            }
+        }
+
+        function navigateDashboard() {
+            const selectedOption = document.getElementById("dashboardOptions").value;
+            document.getElementById("accountActions").style.display = "none";
+            document.getElementById("accountSettings").style.display = "none";
+
+            if (selectedOption === "balance") {
+                alert("Your account balance is $1000.");
+            } else if (selectedOption === "transfer") {
+                alert("Transfer money functionality (not implemented in this example).");
+            } else if (selectedOption === "settings") {
+                document.getElementById("accountSettings").style.display = "block";
+            }
+        }
+
+        function performAccountAction() {
+            const selectedAction = document.getElementById("accountActionOptions").value;
+            alert(`Performing ${selectedAction} action (not implemented in this example).`);
+        }
+
+        function saveSettings() {
+            alert("Settings saved (not implemented in this example).");
+        }
+    </script>
+</body>
+</html>

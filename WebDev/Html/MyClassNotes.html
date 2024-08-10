@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My html doucument</title>
+        <link rel="stylesheet" href="/css/External.css">
+    </head>
+    <body>
+        <h1 id="head" align="center">My Class Notes</h1>
+        <h4 id="name" align="right"><i>By: B.Ganesh Arihanth</i></h4>
+
+        <!--by pressing (shift+1+enter)or(!+enter) we can print basic structure of html readily-->
+        <!--by typing lorem and pressing enter gives us random text-->
+        
+        <!--Lorem ipsum dolor sit amet consectetur adipisicing elit. Est vero reprehenderit 
+            omnis! Impedit accusamus esse eum, libero distinctio provident repudiandae? Dolores 
+            a aliquam consequatur cum quas perspiciatis, officia maxime eveniet?-->
+
+        <hr>
+        <hr>
+
+        <!--this is a comment: comment will not affect the html-->
+        <!--this is example of types of text formatting-->
+
+        <h2 class="h2"><u>Text Formatting</u></h2>
+
+        <br>
+
+        <div id="text">
+        <p>this is normal text</p>
+        <p>this is <b>bold</b> text</p>
+        <p>this is <i>italic</i> text</p>
+        <p>this is <big>big</big> text</p>
+        <p>this is <small>small</small> text</p>
+        <p>this is <sup>superscript</sup> text</p>
+        <p>this is <sub>subscript</sub> text</p>
+        <p>this is <ins>inserted</ins> text</p>
+        <p>this is <u>underline</u> text</p>
+        <p>this is <del>deleted</del> text</p>
+        <p>this is <mark>mark</mark> text</p>
+        </div>
+        
+        <br>
+        <br>
+        <br>
+
+        <div class="H">
+            <h1 align="center">this is h1 tag/element size</h1>
+            <h2 align="center">this is h2 tag/element size</h2>
+            <h3 id="nun1" align="center">this is h3 tag/element size</h3>
+            <h4 align="center">this is h4 tag/element size</h4>
+            <h5 align="center">this is h5 tag/element size</h5>
+            <h6 align="center">this is h6 tag/element size</h6>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <h2 class="h2"><ins>List</ins></h2>
+        <br>
+        <div class="list">
+        <p id="big"><big>There are 3 types of list</big></p>
+        <ul type="circle">
+            <li>ul(Unordered List)</li>
+            <li>ol(Ordered List)</li>
+            <li>dl(Description List)</li>
+        </ul>
+        </div>
+
+        <br>
+
+        <div class="list">
+        <h3>Unordered List</h3>
+        <ul type="disk">
+            <li>list 1</li>
+            <li>list 2</li>
+            <li>list 3</li>
+            <li>list 4</li>
+            <li>list 5</li>
+                <ul>
+                    <li>this is list within list</li>
+                    <li>this is a new list under list 5</li>
+                    <li>unorderd list within unorderded list </li>
+
+                    <ol>
+                    <li>ordered list within unordered list</li>
+                    </ol>
+                </ul>
+
+                <br>
+
+                
+            </ul>
+
+        </div>      
+        <br>  
+        
+        <div class="list">
+        <h3>Ordered List</h3>
+        <ol type="I">
+            <li><b>list 1</b></li>
+                <ul>
+                    <li>this is a unordered list within ordered list(list 1)</li>
+                </ul>
+
+             <br>
+                
+            <li><b>list 2</b></li>
+                <ul>
+                    <li>this is a unordered list within ordered list(list 2)</li>
+                </ul> 
+                
+            <br>   
+    
+            <li><b>list 3</b></li>
+                <ul>
+                     <li>this is a unordered list within ordered list(list 3)</li>
+                </ul>
+
+            <br>
+                
+            <li><b>list 4</b></li>
+                 <ul>
+                     <li>this is a unordered list within ordered list(list 4)</li>
+                </ul>
+
+            <br> 
+            
+            <li><b>list 5</b></li>
+                <ul>
+                    <li>this is a unordered list within ordered list(list 5)</li>
+                </ul>
+
+        </ol>
+        </div> 
+        
+        <br>
+
+        <div class="list">
+        <h3>Description List</h3>
+        <dl>
+            <dt><big>Description Title 1:</big></dt>
+            <dd>Description Data</dd>
+            <br>
+            <dt><big>Description Title 2:</big></dt>
+            <dd>Description Data</dd>
+            <br>
+            <dt><big>Description Title 3:</big></dt>
+            <dd>Description Data</dd>
+            <br>
+            <dt><big>Description Title 4:</big></dt>
+            <dd>Description Data</dd>
+            <br>
+            <dt><big>Description Title 5:</big></dt>
+            <dd>Description Data</dd>
+        </dl>
+        </div>
+        <br>
+
+        <div class="list">
+        <h3>Web Development<small>(description list)</small></h3>
+        <dl>
+            <dt><b>Html:</b></dt>
+            <dd>this adds structure to a webpage</dd>
+            <dt><b>Style:</b></dt>
+            <dd>this adds basic style to a webpage</dd>
+            <dt><b>Css:</b></dt>
+            <dd>this adds complex style to a webpage</dd>
+            <dt><b>JavaScript:</b></dt>
+            <dd>this adds functionality to a webpage</dd>
+        </dl>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <h2 class="h2"><ins>Tables</ins></h2>
+        <br>
+        <h3 id="nun">Collage Timings:</h3>
+
+        <table border="2px" bgcolor="black" cellpadding="15px" 
+        cellspacing="2px" width="600px" height="80px">
+
+        <!-- border adds border to the table outwards
+        bgcolour adds colour to the whole table
+        cellpadding is distance from text and borders
+        cellsapcing is thickness of the border inwards --> 
+
+            <tr bgcolor="grey">
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thusday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+            <tr bgcolor="lightgrey">
+                <td align="center">8-3</td>
+                <td align="center">8-3</td>
+                <td align="center">8-3</td>
+                <td align="center">8-3</td>
+                <td align="center">8-3</td>
+                <td align="center">Holiday</td>
+                <td align="center">Holiday</td>
+            </tr>
+        </table>
+
+        <br>
+        <hr size="5px" width="1000px" noshade>
+        <br>
+
+    </body>
+</html>

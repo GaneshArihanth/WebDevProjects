@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum of Natural Numbers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+        input[type="number"] {
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #0074d9;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #result {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sum of Natural Numbers</h1>
+    <h3>By: Ganesh Arihanth</h3>
+    <hr>
+    <p><i><h3>Enter a positive number to find the sum of natural numbers:</h3></i></p>
+    <br>
+    <input type="number" id="inputNumber">
+    <button onclick="calculateSum()">Calculate</button>
+    <p id="result"></p>
+
+    <script>
+        function calculateSum() {
+            const inputNumber = parseInt(document.getElementById("inputNumber").value);
+            const resultElement = document.getElementById("result");
+
+            if (isNaN(inputNumber) || inputNumber <= 0) {
+                resultElement.innerHTML = "Please enter a positive number.";
+            } else {
+                let sum = 0;
+                for (let i = 1; i <= inputNumber; i++) {
+                    sum += i;
+                }
+                resultElement.innerHTML = "The sum of natural numbers up to " + inputNumber + " is: " + sum;
+            }
+        }
+    </script>
+</body>
+</html>

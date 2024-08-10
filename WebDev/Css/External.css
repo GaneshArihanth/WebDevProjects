@@ -1,0 +1,80 @@
+body{
+     background-color: lightblue; font-family:Verdana;
+      background-image: linear-gradient(to right, white, lightskyblue, rgb(17, 69, 237));
+
+}
+
+#head{
+    background-color:white ;color:blue; border-style:dashed; 
+    border-color:blue; border-width:medium; border-radius:50px;
+    padding:10px; text-decoration: underline wavy;
+}
+
+#name{
+    color:lightgreen
+}
+
+div p{
+    color:rgb(245, 207, 179)
+}
+
+.h2{
+    color:tomato
+}
+
+th{
+    color:white
+}
+
+td{
+    color:brown
+}
+
+ul > li{
+    color:pink
+}
+
+ol > li{
+    color:rgb(194, 153, 4)
+}
+
+.H{
+    background-color:darkblue; color:white; border-style:dashed;
+    border-color:white; border-width:thick; border-radius:10px; padding:50px;
+}
+
+#big,h3{
+    color:crimson
+}
+
+#h3{
+    color:white
+}
+
+dd{
+    color:white
+}
+
+dt{
+    color:lightskyblue; font-weight:bold;
+}
+
+#text,.list{
+    background-color:darkblue; border-style:dashed; border-color:white;
+    border-width:thick; border-radius:10px; padding:50px; 
+}
+h3{
+    color:rgb(143, 247, 24);
+}
+#nun{
+    color:darkblue;
+}
+#nun1{
+    color:white;
+}
+
+
+
+
+
+

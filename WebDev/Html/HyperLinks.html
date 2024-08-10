@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HyperLinks</title>
+    </head>
+    <body>
+
+        <h1 align="center">HyperLink </h1>
+
+        <hr>
+
+        <a href="https://www.google.com/">
+            <h2>Google</h2>
+        </a>
+
+        <hr>
+    
+        <a href="https://www.google.com/" target="_blank">
+            <h2>Google<sup>(new tab)</sup></h2>
+            <!--target=_blank is used to open in a new tab page-->
+        </a>
+
+        <hr>
+
+        <a href="https://www.google.com/" target="_self">
+            <h2>Google<sup>(same page)</sup></h2>
+            <!--target="_self" is used to open in a same page-->
+            <!--target="_self" is default value-->
+        </a>
+
+        <hr>
+
+        <a href="https://www.google.com/" target="_blank" title="this takes you to google.com">
+            <h2>Google<sup>(title)</sup></h2>
+            <!--title is used to show subscript text upon hover on main text-->
+        </a>
+
+        <hr>
+
+        <a href="MyClassNotes.html" target="_blank" title="this takes you to MyClassNotes html page">
+            <h2>My Class Notes</h2> 
+            <!--we can also set shortcut to the files within VS code just 
+            with the exact file name in herf-->
+        </a>
+
+        <!--herf is used to set shortcut to file/webpage-->
+        <!--target is used to open in new tab(_blank) or same tab(default)(_self)-->
+        <!--title is used to show subscript text upon hover on main text-->
+
+        <hr>
+
+        <h1 align="center">Pirate Audio</h1>
+        
+        <br>
+        
+        <audio controls src="Media Content/Pirate.mp3" title="Pirate by Hans Zimmer"></audio>
+        <!--scr is the source, controls add function to music media, title = alt-->
+        
+        <br>
+        <br>
+        <br>
+        <hr>
+        
+        <div align="center">
+
+        <h1>Profil Photo</h1>
+        
+        <img src="Media Content/Profil Pic.jpeg" height="300" title="My profil photo">
+             
+        <br>
+        <br>
+        <br>
+             
+        <a href="https://www.google.com/search?q=memoji&sca_esv=566617571&rlz=1C5CHFA_enIN
+            1075IN1075&sxsrf=AM9HkKk1emVAZKd_ElyWrOiBoKjruCz9Kw%3A1695138373888&ei=RcIJZcXv
+            NY7c-Qar1p24Dw&ved=0ahUKEwiFpvvEgreBAxUObt4KHStrB_cQ4dUDCBA&uact=5&oq=memoji&gs
+            _lp=Egxnd3Mtd2l6LXNlcnAiBm1lbW9qaTIHECMYigUYJzIHECMYigUYJzINEAAYigUYsQMYgwEYQzIIEA
+            AYgAQYsQMyBxAAGIoFGEMyDRAAGIoFGLEDGIMBGEMyBxAAGIoFGEMyCBAAGIAEGLEDMgUQABiABDIFEAAY
+            gARI_QhQswZYswZwAngBkAEAmAF4oAF4qgEDMC4xuAEDyAEA-AEBwgIKEAAYRxjWBBiwA8ICChAAGIo
+            FGLADGEPiAwQYACBBiAYBkAYK&sclient=gws-wiz-serp#ip=1" target="_blank" >
+
+            <img src="Media Content/Profil Pic.jpeg"  height="300" title="This photo takes to Memoji Google search">
+        </a>
+
+        </div>
+
+        <br>
+        <hr>
+
+        <h1 align="center">iFrame</h1>
+
+        <div align="center">
+
+        <iframe src="https://www.bing.com" height="400px" width="800px"></iframe>
+
+        <br>
+        <br>
+        <br>
+
+        <iframe src="MyClassNotes.html" height="400px" width="800px"></iframe>
+    
+        </div>
+
+        <br>
+        <br>
+        <hr>
+
+        <h1 align="center">Buttons</h1>
+
+        <br>
+
+        <div align="center">
+
+        <button title="it's a non functional button"><h1><i>Click Me</i></h1></button>
+
+        <br>
+        <br>
+
+        <a href="https://www.google.com" target="_blank" title="this takes you to www.google.com">
+            <button><h1><i>Google</i></h1></button>
+        </a>
+    
+        </div>
+        
+        <br>
+        <hr>
+         
+        <h1 align="center">Forms</h1>
+        <h3>Data Collection:</h3>
+
+        <form>
+
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="firstname" placeholder="type your first name" required>
+            <!--required makes input compulsory to be entered then only submit works-->
+
+            <br>
+            <br>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lastname" placeholder="type your last name">
+
+            <br>
+            <br>
+
+            <label for="dob">D O B:</label>
+            <input type="date" id="dob" name="date" title="your date of birth" >
+
+            <br>
+            <br>
+
+            <label for="uname">Username:</label>
+            <input type="text" id="uname" name="username" placeholder="type your username" required>
+
+            <br>
+            <br>
+
+            <label for="email">Email Id:</label>
+            <input type="email" id="email" name="email" placeholder="type your email id" required>
+
+            <br>
+            <br>
+
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" name="password" placeholder="type your password" 
+            required maxlength="12" minlength="4">
+
+            <br>
+            <br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="number" title="type your age" min="0" max="99">
+
+            <br>
+            <br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option>-</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="info">Save your login credentials</label>
+            <input type="checkbox" id="info" name="box" title="save your data" required>
+
+            <br>
+            <br>
+
+            <label for="news">Subscribe to our Newsletter</label>
+            <input type="checkbox" id="news" name="box" title="receive daily updates">
+
+            <br>
+            <br>
+
+            <div>
+                <!-- if we use div tag the we not need to use 2 times br tag for more space-->
+
+            <input type="submit">
+
+            </div>
+            <br>
+
+            <input type="reset">
+            <!--for, id, name, placeholder are optional but considerd good practise to add them-->
+            <!--for and id work as a pair by, when click label it clicks the input-->
+            <!--name is a variable it helps to describe the data in input to the server-->
+            <!--place holder is the pre-written text in input box-->
+        </form>
+
+
+
+    
+    </body>
+
+</html>
+
